@@ -37,6 +37,11 @@ ol, ul {
 	list-style: none;
 }
 
+#work-experience-title {
+    margin-top: 5em; /* Adjust the margin as needed */
+    clear: both; /* Ensures the title does not interfere with floating elements */
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -138,7 +143,28 @@ input, select, textarea {
 			}
 
 		}
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.tiles article {
+    flex: 1 1 30%; /* Adjust as needed */
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+.tiles .image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .tiles article {
+        flex: 1 1 100%;
+    }
+}
 	a {
 		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
